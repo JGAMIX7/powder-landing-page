@@ -3,8 +3,6 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Inter', 'Roboto', sans-serif;
-   list-style-type: none;
-   text-decoration: none;
 }
 
 html {
@@ -12,6 +10,22 @@ html {
 }
 
 /* Reset */
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+/* CSS Variables */
+/* Colors */
 
 /* START of the Header section */
 .header {
@@ -24,31 +38,15 @@ html {
    backdrop-filter: blur(8px);
 }
 
-.logo-wrapper {
-   transform-style: preserve-3d;
-   perspective: 1000px;
-}
-
-.logo-wrapper .logo {
+.header .logo {
    width: 50px;
-   animation: rotate 3s linear infinite;
-   transform: rotateY(0deg);
 }
 
-/* Logo spin animation */
-@keyframes rotate {
-   0% {
-      transform: rotateY(360deg);
-   }
-
-   100% {
-      transform: rotateY(0deg);
-   }
-}
-
-/* END of the animation */
-
+/* Navigation */
 .nav {
+   /* position: fixed;
+   top: 0;
+   left: 0; */
    display: flex;
 }
 
@@ -58,12 +56,11 @@ html {
 
 .nav ul li .nav-link {
    margin-left: 30px;
-   padding: 0 3px;
    text-transform: uppercase;
    font-size: 20px;
    font-weight: 500;
-   letter-spacing: 1px;
-   color: #D9D9D9;
+   letter-spacing: 3px;
+   color: #fff;
    position: relative;
 }
 
@@ -72,9 +69,10 @@ html {
    position: absolute;
    bottom: -3px;
    left: 0;
-   height: 1px;
+   height: 2px;
    background-color: #fff;
-   transition: 1s;
+   width: 0;
+   transition: 0.3s;
 }
 
 .nav ul li .nav-link:hover::after {
@@ -84,24 +82,9 @@ html {
 
 /* Hambuger Menu */
 .burger-menu {
-   width: 50px;
-   height: 50px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
    cursor: pointer;
    display: none;
 }
-
-.burger-menu .line {
-   width: 80%;
-   height: 3px;
-   border-radius: 5px;
-   background-color: #fff;
-}
-
-/* END of the Header section */
 
 /* Hero Section */
 .hero {
@@ -157,70 +140,127 @@ html {
    transition: 0.7s;
 }
 
-/* END of the Hero section */
+.left,
+.right {
+   height: 500px;
+}
+
+.right {
+   width: 55%;
+}
+
+.left {
+   width: 45%;
+}
 
 /* Bones section */
 .bones-section {
    display: flex;
    width: 100%;
    height: 500px;
+   /* background-color: #1b1a1a; */
 }
 
-.bones-section .left {
-   width: 40%;
-   /* height: 500px; */
-   /* background: url(images/bones.jpg); */
-}
+/* .bones-section .left,
+.bones-section .right {
+   width: 50%;
+   height: 500px;
+} */
 
 .bones-section .left .left-img {
    width: 100%;
    height: 100%;
-   /* object-fit: cover; */
+   object-fit: cover;
 }
 
 .bones-section .right {
-   width: 60%;
-   height: 500px;
    padding: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
 }
 
 .bones-section .right .section-title,
 .bones-section .right .section-description {
    color: #151C21;
+   /* color: #fff; */
 }
 
 .bones-section .right .section-title {
+   margin-bottom: 20px;
    font-size: 40px;
 }
 
-.bones-section .right .section-description {
+.bones-section .right .section-descriptions {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+}
+
+.bones-section .right .section-descriptions .section-description {
    font-size: 18px;
 }
 
-.bones-section .right:first-child {
-   color: red;
-   margin-bottom: 10px;
+/* Sesh section */
+.sesh-section {
+   /* background-color: #1b1a1a; */
+   display: flex;
+   flex-direction: row-reverse;
 }
 
-/* END of the Bones section */
+.sesh-section .left {
+   background-image: url("../images/bg.png");
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* transform-style: preserve-3d;
+   perspective: 1000px; */
+}
+
+.sesh-section .left .sesh-img {
+   width: 100%;
+   height: 100%;
+   /* animation: rotate 3s linear infinite;
+   transform: rotateY(0deg); */
+}
+
+/* Logo spin animation */
+@keyframes rotate {
+   0% {
+      transform: rotateY(360deg);
+   }
+
+   100% {
+      transform: rotateY(0deg);
+   }
+}
 
 /* Albums section */
 .albums-section {
-   background-color: #151C21;
+   background-color: #1b1a1a;
    width: 100%;
 }
 
 .albums-section .albums-wrapper {
-   height: 500px;
+   height: 420px;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;
+   flex-wrap: wrap;
    gap: 50px;
 }
 
 .albums-section .albums-wrapper .album {
    width: 300px;
    height: 300px;
+   cursor: pointer;
+   transition: transform 0.2s ease;
+}
+
+.albums-section .albums-wrapper .album:hover {
+   transform: scale(1.1);
 }
 
 .albums-section .albums-wrapper .album .album-cover {
