@@ -4,54 +4,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS link -->
-  <link rel="stylesheet" href="css/style.css">
   <!-- Google Fonts Inter and Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Remixicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css">
+  <!-- Favincon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- CSS-->
+  <link rel="stylesheet" href="css/style.css">
   <title>Powder</title>
 </head>
 
 <body>
   <!-- Header section -->
   <header class="header">
-    <img class="logo" src="images/sesh-logo.svg" alt="Sesh logo">
-
     <nav class="nav">
-      <ul>
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#bones">Bones</a></li>
-        <li><a class="nav-link" href="#sesh">Sesh</a></li>
-        <li><a class="nav-link" href="#albums">Albums</a></li>
-      </ul>
-    </nav>
+      <a href="index.html">
+        <img class="nav__logo" src="images/sesh-logo.svg" alt="Sesh logo">
+      </a>
 
-    <div class="burger-menu">
-      <ion-icon name="menu"></ion-icon>
-      <ion-icon name="close"></ion-icon>
-    </div>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav__item"><a class="nav-link" href="#bones">Bones</a></li>
+          <li class="nav__item"><a class="nav-link" href="#sesh">Sesh</a></li>
+          <li class="nav__item"><a class="nav-link" href="#albums">Albums</a></li>
+        </ul>
+
+        <div class="nav__close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <div class="nav__toggle">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </nav>
   </header>
   <!-- END of the Header section -->
 
   <!-- Hero section -->
   <main>
-    <section class="hero" id="hero">
-      <div class="video">
+    <section class="home" id="home">
+      <div class="home__video">
         <video autoplay muted loop>
           <source src="video/Powder.mp4" type="video/mp4">
         </video>
       </div>
 
-      <div class="hero-content">
-        <h2 class="hero-title">
+      <div class="home__content">
+        <h1 class="home__title">
           Just breathe,<br>
           don't think to deep
-        </h2>
+        </h1>
 
-        <p class="hero-description">
+        <p class="home__description">
           Powder is a pretty expansive project at 28 tracks long. It's almost
           a double album worth of <br>
           music. It all covers a pretty vast set of genres and moods. There
@@ -66,7 +77,7 @@
           like a lot of Bones music.
         </p>
 
-        <a class="hero-cta"
+        <a class="home__button"
           href="https://open.spotify.com/intl-fr/album/6Bo3OT9r2iJ5Exkw7gnk9E?si=rTEHqpL8TKyl6NNjQgHIhQ"
           target="_blank">Listen Now</a>
       </div>
@@ -74,22 +85,22 @@
     <!-- END of the Hero section -->
 
     <!-- Start of the Bones section -->
-    <section id="bones" class="bones-section">
-      <div class="left">
-        <img class="left-img" src="images/bones.jpg" alt="pictures of Bones (rapper)">
+    <section class="about__section" id="about">
+      <div class="about__left-side">
+        <img class="left-img" src="images/bones.jpg" alt="Bones (rapper)">
       </div>
 
-      <div class="right">
-        <h3 class="section-title">Bones</h3>
+      <div class="about__right-side">
+        <h3 class="section__title">Bones</h3>
 
-        <div class="section-descriptions">
-          <p class="section-description">
+        <div class="section__descriptions">
+          <p class="section__description">
             Elmo Kennedy O'Connor, mainly known as BONES, is an American rapper
             from Muir Beach, CA. He is the owner of underground music collective
             TeamSESH and releases music under the aliases surrenderdorothy,
             OREGONTRAIL (with TeamSESH producer GREAF), and Ricky A Go Go.
           </p>
-          <p class="section-description">
+          <p class="section__description">
             Although O'Connor is often considered to be one of the pioneers of
             the emo rap sub-genre, O'Connor has said that he has no specific
             genre, though has been characterized as cloud rap, experimental
@@ -100,7 +111,7 @@
             been compared sub-genres such as horrorcore and emo rap. He is also
             considered an early pioneer of trap metal.
           </p>
-          <p class="section-description">
+          <p class="section__description">
             Bones is widely regarded as one of the most influential artists in
             the internet's underground hip-hop scene. Since 2010, he has
             released an extensive discography and developed a large fan base. As
@@ -111,22 +122,22 @@
       </div>
     </section>
 
-    <section id="sesh" class="sesh__section">
-      <div class="left">
+    <section class="sesh__section" id="sesh">
+      <div class="sesh__left-side">
         <img class="sesh-img" src="images/Skull.png" alt="Skull">
       </div>
-      <div class="right">
-        <h3 class="sesh-title">TeamSESH</h3>
+      <div class="sesh__right-side">
+        <h2 class="section__title">TeamSESH</h2>
         <div class="sesh-descriptions">
           <p class="sesh-description"></p>
-          <p class="sesh-description"></p>
+          <p class="sesh-description">hrdh</p>
           <p class="sesh-description"></p>
         </div>
       </div>
     </section>
 
-    <section id="albums" class="albums-section">
-      <div class="albums-wrapper">
+    <section class="albums__section" id="albums">
+      <div class="albums__container">
         <div class="album">
           <a href="#">
             <img class="album-cover" src="images/DeadBoy-cover.jpg" alt="DeadBoy">
@@ -151,10 +162,16 @@
     </section>
   </main>
 
-  <!-- <footer></footer> -->
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <footer class="footer">
+    <div class="social__links">
+      <a href=""><i class="ri-spotify-fill"></i></a>
+      <a href=""><i class="ri-soundcloud-fill"></i></a>
+      <a href=""><i class="ri-youtube-fill"></i></a>
+      <a href=""><i class="ri-instagram-fill"></i></a>
+      <a href=""></a>
+      <a href=""></a>
+    </div>
+  </footer>
   <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6Bo3OT9r2iJ5Exkw7gnk9E?utm_source=generator&theme=0" width="60%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
 </body>
 
