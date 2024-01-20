@@ -25,24 +25,21 @@
     <a href="#home">
       <img class="logo" src="images/sesh-logo.svg" alt="Sesh logo">
     </a>
+    
+    <div class="toggle" id="toggle">
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
 
-    <nav class="nav">
-      <div class="toggle">
-        <ion-icon name="menu-outline"></ion-icon>
-      </div>
-
-      <div class="nav__menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">Bones</a></li>
-          <li class="nav__item"><a class="nav__link" href="#sesh">Sesh</a></li>
-          <li class="nav__item"><a class="nav__link" href="#albums">Albums</a></li>
-        </ul>
-
-        <div class="close">
+    <nav class="nav" id="menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">Bones</a></li>
+        <li class="nav__item"><a class="nav__link" href="#sesh">Sesh</a></li>
+        <li class="nav__item"><a class="nav__link" href="#albums">Albums</a></li>
+        <div class="close" id="close">
           <ion-icon name="close-outline"></ion-icon>
         </div>
-      </div>
+      </ul>
     </nav>
   </header>
   <!-- END of the Header section -->
@@ -64,15 +61,15 @@
 
         <p class="home__desc">
           Powder is a pretty expansive project at 28 tracks long. It's almost
-          a double album worth of <br>
+          a double album worth of
           music. It all covers a pretty vast set of genres and moods. There
-          are moments of rap, <br>
+          are moments of rap,
           experimental rap, jazz, rock, and emo. On the whole, the general
-          mood of the songs is <br>
+          mood of the songs is
           pretty somber. Bones always has a vibe that mostly leans on lo-fi,
-          cloud rap mood to his <br>
+          cloud rap mood to his
           music. Over the course of these 28 tracks so many different things
-          are presented. <br>
+          are presented.
           A lot of this release relies on the instrumental mood and feeling
           like a lot of Bones music.
         </p>
@@ -122,7 +119,7 @@
       </div>
     </section>
 
-    <section class="section" id="sesh">
+    <section class="section" class="sesh" id="sesh">
       <div class="section__left-side">
         <img class="sesh-img" src="images/sesh.png" alt="Skull">
       </div>
@@ -189,6 +186,8 @@
   </footer>
   <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6Bo3OT9r2iJ5Exkw7gnk9E?utm_source=generator&theme=0" width="60%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
 
+
+  <script type="text/javascript" src="script.js"></script>
   <!-- ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
