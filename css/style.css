@@ -287,8 +287,7 @@ video {
       left: 0;
       width: 100%;
       background-color: var(--almost-black);
-      backdrop-filter: blur(16px);
-      z-index: 2;
+      backdrop-filter: blur(8px);
       display: none;
    }
 
@@ -343,92 +342,6 @@ video {
    .section__right-side {
       padding: 20px;
    }
-   /* Footer */
-   .social__links a i {
-      font-size: 40px;
-   }
-}
-
-@media all and (min-width: 800px) {
-   /* Header */
-   .header {
-      padding: 0 10px;
-      height: 80px;
-   }
-
-   .toggle,
-   .close {
-      display: block;
-   }
-
-   .close {
-      position: absolute;
-      top: -70px;
-      right: 10px;
-   }
-
-   .nav {
-      position: absolute;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: var(--almost-black);
-      backdrop-filter: blur(8px);
-      display: none;
-   }
-
-   .nav.active {
-      display: block;
-   }
-
-   .nav__list {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      padding: 20px 0 50px;
-   }
-
-   .nav-link {
-      font-size: 2rem;
-   }
-
-   /* Home */
-   .home__content {
-      padding: 160px 10px;
-   }
-
-   .home__title {
-      font-size: 2.625rem;
-   }
-
-   .home__desc {
-      font-size: 18px;
-      padding-right: 0;
-   }
-
-   .home__btn {
-      padding: 20px 30px;
-      font-size: 1.25rem;
-   }
-
-   /* About */
-   .section__left-side,
-   .section__right-side {
-      width: 100%;
-      height: auto;
-   }
-
-   .section__right-side {
-      padding: 0px;
-   }
-
-   /* Albums */
-   .albums__section {
-      justify-content: center;
-      gap: 20px;
-   }
-
    /* Footer */
    .social__links a i {
       font-size: 40px;
