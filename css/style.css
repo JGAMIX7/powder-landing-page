@@ -124,6 +124,7 @@ body {
 .home {
    width: 100%;
    height: 100vh;
+   scroll-margin: 0;
 }
 
 .video-container {
@@ -184,10 +185,12 @@ video {
    align-items: center;
    flex-wrap: wrap;
    background: var(--white);
+   scroll-margin: 0;
 }
 
 .sesh {
    flex-direction: row-reverse;
+   scroll-margin: 0;
 }
 
 .section__left-side,
@@ -219,6 +222,7 @@ video {
 
 /* ====== ALBUMS SECTION ====== */
 .albums__section {
+   scroll-margin: 0;
    width: 100%;
    padding: 80px 20px;
    display: flex;
@@ -228,6 +232,7 @@ video {
 }
 
 .album {
+   scroll-margin: 0;
    width: 350px;
    height: 350px;
    transition: all .3s ease;
@@ -264,6 +269,7 @@ video {
 
 /* ====== RESPONSIVE ====== */
 @media all and (max-width: 428px) {
+
    /* Header */
    .header {
       padding: 0 10px;
@@ -342,6 +348,7 @@ video {
    .section__right-side {
       padding: 20px;
    }
+
    /* Footer */
    .social__links a i {
       font-size: 40px;
