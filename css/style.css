@@ -164,8 +164,7 @@ video {
 
 .home__title {
    color: var(--white);
-   font-size: 38px;
-   /* font-size: 2.625rem; */
+   font-size: 2,375rem;
    font-weight: 900;
    text-transform: uppercase;
    letter-spacing: 3px;
@@ -228,7 +227,7 @@ video {
 }
 
 .about__title {
-   font-size: 2,125rem;
+   font-size: 2.375rem;
    margin-bottom: 10px;
 }
 
@@ -252,13 +251,9 @@ video {
 }
 
 .album {
-   width: 320px;
-   height: 320px;
+   width: 350px;
+   height: 350px;
    transition: all .3s ease;
-}
-
-.album:hover {
-   transform: scale(1.05);
 }
 
 /* ====== FOOTER ====== */
@@ -275,7 +270,7 @@ video {
 }
 
 .social__links a i {
-   font-size: 3.75rem;
+   font-size: 3.125rem;
    color: var(--black);
 }
 
@@ -286,13 +281,14 @@ video {
 }
 
 /* ====== RESPONSIVE ====== */
+
 /* ====== Breakpoint for 1440px devices ====== */
-/* START of the Header section */
 @media screen and (min-width: 1440px) {
    section {
       scroll-margin: 75px;
    }
-
+   
+   /* START of the Header section */
    .header {
       height: 75px;
       padding: 0 100px;
@@ -413,7 +409,7 @@ video {
    }
    
    .about__title {
-      font-size: 42px;
+      font-size: 2,625rem;
       margin-bottom: 10px;
    }
    
@@ -460,7 +456,7 @@ video {
    }
    
    .social__links a i {
-      font-size: 60px;
+      font-size: 2.5rem;
       color: var(--black);
    }
    
