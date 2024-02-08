@@ -37,6 +37,10 @@ body {
    font-family: 'Inter', sans-serif;
 }
 
+section {
+   scroll-margin: 75px;
+}
+
 /* START of the Header section */
 .header {
    position: fixed;
@@ -124,7 +128,6 @@ body {
 .home {
    width: 100%;
    height: 100vh;
-   scroll-margin: 0;
 }
 
 .video-container {
@@ -154,11 +157,11 @@ video {
    letter-spacing: 3px;
 }
 
-.home__desc {
+.home__description {
    color: var(--white);
    font-size: 20px;
    margin: 20px 0;
-   padding-right: 550px;
+   max-width: 680px;
 }
 
 .home__btn {
@@ -178,51 +181,48 @@ video {
 
 
 /* ====== ABOUT & SESH SECTION ====== */
-.section {
+.about__section {
    width: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
    background: var(--white);
-   scroll-margin: 0;
 }
 
 .sesh {
    flex-direction: row-reverse;
-   scroll-margin: 0;
 }
 
-.section__left-side,
-.section__right-side {
+.left-side,
+.right-side {
    width: 50%;
    height: 550px;
 }
 
-.section__left-side img {
+.left-side img {
    background-position: center;
 }
 
-.section__right-side {
+.right-side {
    padding: 50px;
 }
 
-.section__title {
+.about__title {
    font-size: 42px;
    margin-bottom: 10px;
 }
 
-.section__description {
+.about__description {
    font-size: 18px;
 }
 
-.section__description:nth-child(2) {
+.about__description:nth-child(2) {
    margin: 10px 0;
 }
 
 /* ====== ALBUMS SECTION ====== */
 .albums__section {
-   scroll-margin: 0;
    width: 100%;
    padding: 80px 20px;
    display: flex;
@@ -232,7 +232,6 @@ video {
 }
 
 .album {
-   scroll-margin: 0;
    width: 350px;
    height: 350px;
    transition: all .3s ease;
@@ -322,7 +321,7 @@ video {
       font-size: 2.625rem;
    }
 
-   .home__desc {
+   .home__description {
       font-size: 18px;
       padding-right: 0;
    }
@@ -333,8 +332,8 @@ video {
    }
 
    /* About */
-   .section__left-side,
-   .section__right-side {
+   .left-side,
+   .right-side {
       width: 100%;
       height: auto;
    }
@@ -345,8 +344,105 @@ video {
       gap: 20px;
    }
 
-   .section__right-side {
+   .right-side {
       padding: 20px;
+   }
+
+   /* Footer */
+   .social__links a i {
+      font-size: 40px;
+   }
+}
+
+
+@media all and (max-width: 800px) {
+
+   /* Header */
+   .header {
+      padding: 0 10px;
+      height: 80px;
+   }
+
+   .toggle,
+   .close {
+      display: block;
+   }
+
+   .close {
+      position: absolute;
+      top: -70px;
+      right: 10px;
+   }
+
+   .nav {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: var(--almost-black);
+      backdrop-filter: blur(8px);
+      display: none;
+   }
+
+   .nav.active {
+      display: block;
+   }
+
+   .nav__list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px 0 50px;
+   }
+
+   .nav-link {
+      font-size: 2rem;
+   }
+
+   /* Home */
+   .home__content {
+      padding: 220px 25px 0;
+   }
+
+   .home__title {
+      font-size: 2.625rem;
+   }
+
+   .home__description {
+      font-size: 18px;
+      padding-right: 0;
+   }
+
+   .home__btn {
+      padding: 20px 30px;
+      font-size: 1.25rem;
+   }
+
+   /* About */
+   .left-side,
+   .right-side {
+      /* width: 100%; */
+      height: 600px;
+   }
+
+   .right-side {
+      padding: 20px;
+   }
+
+   .about__title {
+      font-size: 38px;
+   }
+
+   .about__description {
+      font-size: 16px;
+   }
+
+   /* Albums */
+   .albums__section {
+      justify-content: center;
+      padding: 40px 0;
+      gap: 20px;
    }
 
    /* Footer */
