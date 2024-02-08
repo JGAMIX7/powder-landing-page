@@ -304,12 +304,6 @@ video {
    .close {
       display: none;
    }
-
-   /* .close {
-      position: absolute;
-      top: -70px;
-      right: 10px;
-   } */
    
    .nav__list {
       display: flex;
