@@ -180,6 +180,7 @@ video {
 .home__btn {
    display: inline-block;
    color: var(--black);
+   mix-blend-mode: screen;
    font-size: 1.125rem;
    font-weight: 700;
    border: 3px solid var(--white);
