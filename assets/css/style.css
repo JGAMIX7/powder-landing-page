@@ -52,9 +52,10 @@ section {
    align-items: center;
    justify-content: space-between;
    padding: 0 10px;
-   background-color: var(--almost-black);
-   backdrop-filter: blur(8px);
+   background-color: transparent;
    z-index: 1;
+   transition: all .3s ease-out;
+   
 }
 
 .logo {
@@ -96,12 +97,12 @@ section {
    width: 100%;
    background-color: var(--almost-black);
    backdrop-filter: blur(8px);
-   display: none;
+   transform: translateY(-150%);
    transition: all .5s ease;
 }
 
 .nav.active {
-   display: block;
+   transform: translateY(0);
 }
 
 .nav__list {
@@ -115,7 +116,7 @@ section {
 
 .nav__link {
    color: var(--white);
-   font-size: 2rem;
+   font-size: 1.5rem;
    font-weight: 500;
    text-transform: uppercase;
    letter-spacing: 3px;
@@ -378,6 +379,11 @@ video {
       height: 75px;
       padding: 0 100px;
    }
+
+   .header.active {
+      background-color: var(--almost-black);
+      backdrop-filter: blur(8px);
+   }
    
    .toggle,
    .close {
@@ -391,6 +397,7 @@ video {
       width: auto;
       background-color: transparent;
       backdrop-filter: blur(0);
+      transform: translateY(0);
    }
    
    
